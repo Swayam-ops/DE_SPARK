@@ -1,0 +1,25 @@
+const int gasPin = A0;
+#include <Servo.h>
+Servo myservo;
+int value;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+  myservo.attach(3);
+}
+
+void loop()
+{
+  value = analogRead(gasPin);
+  Serial.println(value);
+  if (value > 100)
+  {
+    myservo.write(220);
+    digitalWrite(13, HIGH);
+    delay(2000);
+    digitalWrite(13, LOW);
+  }
+  delay(1000);
+}
