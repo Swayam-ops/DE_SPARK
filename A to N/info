@@ -1,0 +1,3 @@
+This uploads the data from sensors to data base. 
+################################################
+A local server runs behind it which maintains communication between the hardwares. And the data collected are been uploaded to a common database.
