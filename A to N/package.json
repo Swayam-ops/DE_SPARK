@@ -1,0 +1,14 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "npm congig",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "massoom",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^2.1.0"
+  }
+}
